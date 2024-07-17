@@ -2,14 +2,14 @@ from setuptools import find_packages, setup
 
 install_requires = [
     "numpy>=1.22.0",
-    "networkx==2.8.*",
+    "networkx>=3.3",
     "decorator==5.1.*",
     "pandas>=1.2.0",
     "gensim>=4.0.0",
     "tqdm",
     "python-louvain",
     "scikit-learn",
-    "scipy",
+    "scipy<1.13",
     "pygsp",
     "six",
     "python-Levenshtein"
@@ -62,6 +62,6 @@ setup(
         "Intended Audience :: Developers",
         "Topic :: Software Development :: Build Tools",
         "License :: OSI Approved :: MIT License",
-        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.10",
     ],
 )
